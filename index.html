@@ -2,9 +2,36 @@
 <html>
 <head>
   <title>NetlifyCMS GitHub OAuth Provider Client Example</title>
+  <style>
+    .warning {
+      background-color: yellow;
+      padding: 1rem;
+    }
+
+    .admin-btn {
+      border: 2px solid black;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
   <h1>NetlifyCMS GitHub OAuth Provider Client Example</h1>
-  <a href="./admin">Go to the NetlifyCMS</a>
+  <div class="warning">
+    <p>
+      <strong> Note:</strong>
+      When you attempt to Log in with GitHub in the NetlfyCMS it won’t give
+      you access. That's because your GitHub account must have push access to
+      <a href="https://github.com/tylergaw/netlify-cms-github-oauth-provider-client-example">this repo</a>, which you won't have.
+    </p>
+    <p>
+      The best thing for you to do is fork the repo and configure it with your
+      own info. But, if you just want a quick look, send me an email (me@tylergaw.com)
+      and I'll give you push access. (as long as the number of requests for access don't get too high)
+    </p>
+  </div>
+  <a href="./admin" class="admin-btn">Go to the NetlifyCMS</a>
 </body>
 </html>
