@@ -1,0 +1,19 @@
+backend:
+  name: github
+  branch: master
+  repo: tylergaw/netlify-cms-github-oauth-provider-client-example # change this to your repo
+  base_url: https://netlify-cms-github-oauth-provider-example.glitch.me # change this to your OAuth server
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
